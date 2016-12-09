@@ -4,6 +4,8 @@
 
 body {
 	margin-top: 0;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 18px;
 }
 
 h1 {
@@ -13,13 +15,14 @@ h1 {
 .menuItem {
 	border: 1px solid black;
 	background-color: gray;
+	padding: 40px 10px 10px 10px;
+
 	width: 90%;
 	height: 150px;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	color: black;
-	position: relative;
+	overflow: auto;
 }
 
 .row {
@@ -28,13 +31,21 @@ h1 {
 
 .itemTitle {
 	position: absolute;
+	border: 1px solid black;
+	background-color: pink;
+	text-align: center;
+	line-height: 35px;
+	padding: auto;
+	width: 30%;
+	height: 20%;
 	top: 0;
-	right: 0;
+	right: 5%;
 }
 
 /********** Desktop view **********/
 @media (min-width: 992px) {
 	.col-lg-4 {
+		position: relative;
 		float: left;
 		width: 33%;
 	}
@@ -43,6 +54,7 @@ h1 {
 /********** Tablet view **********/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-6, .col-md-12 {
+		position: relative;
 		float: left;
 	}
 	.col-md-6 {
@@ -56,6 +68,7 @@ h1 {
 /********** Mobile view **********/
 @media (max-width: 767px) {
 	.col-sm-12 {
+		position: relative;
 		float: left;
 		width: 100%;
 	}
