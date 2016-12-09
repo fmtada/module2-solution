@@ -10,19 +10,17 @@ body {
 
 h1 {
 	text-align: center;
+	font-size: 175%;
 }
 
 .menuItem {
 	border: 1px solid black;
 	background-color: gray;
 	padding: 40px 10px 10px 10px;
-
 	width: 90%;
-	height: 150px;
 	margin-right: auto;
 	margin-left: auto;
 	color: black;
-	overflow: auto;
 }
 
 .row {
@@ -32,14 +30,26 @@ h1 {
 .itemTitle {
 	position: absolute;
 	border: 1px solid black;
-	background-color: pink;
+	font-size: 125%;
 	text-align: center;
 	line-height: 35px;
-	padding: auto;
 	width: 30%;
-	height: 20%;
-	top: 0;
+	height: 40px;
+	top: -5px;
 	right: 5%;
+}
+
+#item1 {
+	background-color: pink;
+}
+
+#item2 {
+	background-color: red;
+	color: white;
+}
+
+#item3 {
+	background-color: yellow;
 }
 
 /********** Desktop view **********/
@@ -61,7 +71,8 @@ h1 {
 		width: 50%;
 	}
 	.col-md-12 {
-		width: 100%;
+		right: 2.8%;
+		width: 105.5%;
 	}
 }
 
